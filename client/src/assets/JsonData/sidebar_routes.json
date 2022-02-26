@@ -1,0 +1,18 @@
+[
+    {
+        "display_name": "Dashboard",
+        "route": "/"
+    },
+    {
+        "display_name": "Cree une seance",
+        "route": "/cree-une-seance"
+    },
+    {
+        "display_name": "Etudiant",
+        "route": "/etudiant"
+    },
+    {
+        "display_name": "Seances precedentes",
+        "route": "/seance-precedente"
+    }
+]

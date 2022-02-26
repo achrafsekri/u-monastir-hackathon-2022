@@ -1,0 +1,21 @@
+
+  .hidden{
+    display: none;
+  }
+  .image_container{
+    width: 30vw;
+    height: 30vw;
+    border: solid black;
+    justify-self: center;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image_container img{
+    
+    width: 98%;
+    height: 98%;
+    background-color: transparent;
+  }
+  
