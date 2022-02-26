@@ -28,7 +28,7 @@ const theme = createTheme({
   },
 });
 
-const steps = ['Nomer la seance', 'selectionner la classe','selectionner la TD et TP'];
+const steps = ['Matiere', 'Selectionner la classe','Selectionner la TD et TP'];
 
 export default function HorizontalLinearStepper(props) {
   const [activeStep, setActiveStep] = React.useState(0);
