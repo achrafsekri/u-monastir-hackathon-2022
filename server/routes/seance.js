@@ -185,14 +185,18 @@ router.post("/generate-code", async (req, res) => {
         enRef: result._id,
       });
       if (seance !== null) {
-        var code = "";
+        /*var code = "";
         for (let i = 0; i < 10; i++) {
           code += `${Math.ceil(Math.random() * 100)}`;
         }
         seance.code = "seance:" + seance._id + ",code:" + code;
         seance.save();
         res.json({ ok: true, code: seance.code });
-        return;
+        return;*/
+        seance.code = req.body.code
+        await seance.save()
+        console.log(seance)
+        res.json({ok:true})
       } else {
         result = { message: "seance invalide" };
       }
@@ -201,7 +205,7 @@ router.post("/generate-code", async (req, res) => {
     }
     res.json({ ...result, ok: false });
   } catch (e) {
-    console.log(e.message);
+    console.log(e);
     res.json({ ok: false, message: e.message });
   }
 });
@@ -239,11 +243,8 @@ router.post("/register-presence", async (req, res) => {
   }
 });
 
-<<<<<<< HEAD
-router.post("/update_presence", async(req, res) => {
-=======
+
 router.post("/update_presence", async (req, res) => {
->>>>>>> 8adddeea0b0d742fbde59dc479881908533a6e1e
   try {
     var seance = await Seance.findOne({ id: req.body.seanceId });
     await seance.updateOne({presence:req.body.presence})

@@ -22,7 +22,7 @@ export default function Qrcode() {
   const generate_qr=()=>{
       let te=(Math.random() + 1).toString(36).substring(7);
       settext(te);
-      let seance_send={email:user.email,password:user.password,seanceId:localStorage.seanceid,code:text};
+      let seance_send={email:user.email,password:user.password,enRef:user.id,seanceId:localStorage.seanceid,code:text};
 
       axios.post('localhost:4000/seance/generate-code',seance_send)
       .then(function (response) {
@@ -63,7 +63,7 @@ export default function Qrcode() {
         
         
     });
-      }, 8000);
+      }, 10000);
       return () => clearInterval(interval);
     
   };

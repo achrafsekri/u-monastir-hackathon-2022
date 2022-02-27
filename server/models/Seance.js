@@ -10,7 +10,6 @@ const SeanceSchema = new mongoose.Schema({
   },
   date: {
     type: String,
-    required: true,
   },
   startAt: {
     type: String,

@@ -12,7 +12,7 @@ export default function Step1() {
     <Box  sx={{ display: 'flex', width:'35vw',height:'30vh',justifyContent:'center',alignItems:'center', pt: 2 ,justifySelf:'center',alignSelf:'center'}}>
      <TextField
           id="standard-password-input"
-          label="Donner la matière"
+          label="Matière"
           type="text"
           autoComplete="current-password"
           variant="standard"
