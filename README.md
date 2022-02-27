@@ -1,1 +1,1 @@
-# This project won the 2022 university of monastir hackathon, worked on it with 4 friends, I worked on the front end.
+#This project won the 2022 university of Monastir hackathon, it s a classroom attendance app that lets teachers manage student attendance and lets students scan a QR code using a mobile app that we created to register attendance. worked on it with 4 friends, I worked on the front end.
